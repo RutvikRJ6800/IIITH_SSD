@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Students Records</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body >
+    <div class="message">
+        <h3>Student Records</h3>
+    </div>
+    <div class="container">
+        <div class="inputfields">
+            
+            <!-- <label for="rnumber">RollNumber</label> -->
+            <form action=""></form>
+            <input type="text" id="rollNo" placeholder="Roll Number">
+            <input type="text" id="name" placeholder="Name">
+            <button class="btn1" margin-left="" onclick="addData()">Add New</button>
+        </div>
+
+        <br>
+        <br>
+        
+        <div class="table" margin="auto">
+            <table id="myTable">
+
+                <tr width="100%" column-width="100px">
+                    <th style="background-color: #9ceef4">Roll Number</th>
+                    <th style="background-color: #9ceef4">Student name</th>
+                </tr>
+
+            </table>
+        </div>
+        <button class="btn2" margin-left="" onclick="deleteData()">Delete Last Entry</button>
+    </div>
+    <div id="grad">
+    </div>
+
+    <script>
+        function addData(){
+            var rollNo = document.getElementById('rollNo').value;
+            var name = document.getElementById('name').value;
+            var table = document.getElementById("myTable");
+            var row = table.insertRow(-1);
+            var cell1 = row.insertCell(0);
+            var cell2 = row.insertCell(1);
+            cell1.innerHTML = rollNo;
+            cell2.innerHTML = name;
+            document.getElementById("rollNo").reset();
+            document.getElementById("name").reset();
+        }
+        function deleteData(){
+            // var table = document.getElementById("myTable");
+            document.getElementById("myTable").deleteRow(-1);
+        }
+    </script>
+    
+    
+</body>
+</html>

@@ -1,0 +1,103 @@
+body{
+    background: linear-gradient(to right,#70f586, #9197e5);
+    font-family: Arial;
+}
+.container{
+    background-color: aliceblue;
+    margin: auto;
+    height: max-content;
+    width: max-content;
+    border: 2px solid black;
+    border-radius: 25px;
+    padding: 10px 20px 10px 20px;
+}
+.message{
+    height: max-content;
+    width: max-content;
+    margin-top: 20%;
+    margin: auto;
+}   
+th, td {
+    border-style:solid;
+   border-color: #0e1010;
+   padding-top: 5px;
+    padding-bottom: 7px;
+    padding-left: 80px;
+    padding-right: 85px;
+}
+.table{
+    border:1px solid black;
+    margin-left:auto;
+    margin-right:auto;
+    padding:2px;
+    border-spacing:20px;
+    table-layout: auto;
+    column-width: auto;
+    width: 100%
+}
+.btn1{
+    background-color: #09991d; /* Green */
+    border: none;
+    color: white;
+    padding: 6px 6  px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: auto;
+    border-radius: 3px;
+}
+.btn2{
+    background-color: #f20c08; /* Green */
+    border: none;
+    color: white;
+    padding: 6px 6  px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: auto;
+    border-radius: 3px;
+    margin-top: 20px;
+    margin-left: 200px;
+}
+
+
+
+.whole{
+    margin-top: 170px;
+}
+body{
+    background: linear-gradient(to right,#e66465, #9198e5);
+}
+.login{
+    background-color: aliceblue;
+    margin: auto;
+    height: max-content;
+    width: max-content;
+    border: 2px solid black;
+    border-radius: 15px;
+    padding: 10px 20px 10px 20px;
+    box-shadow: 5px 10px #060606;
+}
+.loginmessage{
+    height: max-content;
+    width: max-content;
+    margin-top: 20%;
+    margin: auto;
+}
+input[type=text]:hover {
+    border: 3px solid rgb(242, 22, 22);
+}
+.btn1{
+    background-color: #6a87a7; /* Green */
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: auto;
+    border-radius: 7px;
+}
