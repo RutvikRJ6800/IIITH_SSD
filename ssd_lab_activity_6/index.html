@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <script src="javascript.js"></script>
+</head>
+<body>
+    <h2>Lab 6: HTML DOM Events</h2>
+    <form name="form1" action="#" method="post">
+    <table>
+        <tr>
+            <td>Manager Name:</td>
+            <td><input type="text" id="fname" required></td>
+            
+        </tr>
+        
+        <tr>
+            <td> Group Email:</td>
+            <td><input type="text" id="gmail" required></td>
+            <td id="erroremail"></td>
+        
+        </tr>
+        
+        <tr>
+            <td>Server Username:</td>
+            <td><input type="text" id="uname" oninput="javascript:UnameValidate(event)" onblur="javascript:UnameValidate(event)" required></td>
+            <td id="errorname"></td>
+        </tr>
+        
+        <tr>
+            <td>Server Password:</td>
+            <td><input type="text" id="pword" required></td>
+        </tr>
+        
+        <tr>
+            <td>Confirm Password:</td>
+            <td><input type="text" id="cpword" onblur="ValidatePassword()" required></td>
+            <td id="wrong_pass_alert"></td>
+        </tr>
+        
+
+        <tr>
+            <td>Team Lead:</td>
+            <!-- <td><input type="text" id="tlead"></td> -->
+            <td><select name="Team Lead" id="Team Lead" >
+                <option value="Rutvik">Rutvik</option>
+                <option value="Shukan">Shukan</option>
+                <option value="Meet">Meet</option>
+                <option value="Jeet">Jeet</option>
+                <option value="Meet">Meet</option>
+                <option value="Yash">Yash</option>
+              </select></td>
+        </tr>
+        
+        <tr>
+            <td>Team Member:</td>
+            <td><input type="text" id="tmember"></td>
+        </tr>
+        <tr>
+            <td><input type="submit" onclick="SubmitForm()" ></td>
+            
+        </tr>
+        
+    </table>
+</form>
+
+</body>
+</html>
